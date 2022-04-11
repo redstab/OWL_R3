@@ -30,8 +30,6 @@ static LRESULT WinHook::HookCallback(int code, LPARAM lparam, WPARAM wparam)
 {
 	const auto& callback = _callback_store[hook_type];
 
-	std::cout << "Hello";
-
 	callback(code,lparam,wparam);
 
 	return CallNextHookEx(NULL, code, lparam, wparam);

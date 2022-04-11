@@ -16,7 +16,7 @@ public:
 
 	WinHook(HookType hook_type, HookFunc callback);
 
-	~WinHook();
+	virtual ~WinHook();
 private:
 
 	static std::unordered_map<HookType, HookFunc> _callback_store;

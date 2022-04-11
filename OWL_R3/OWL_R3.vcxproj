@@ -140,10 +140,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="KeyboardHook.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="WinHook.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="KeyboardHook.h" />
     <ClInclude Include="WinHook.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

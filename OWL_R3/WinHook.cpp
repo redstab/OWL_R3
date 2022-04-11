@@ -28,6 +28,8 @@ WinHook::~WinHook()
 template<HookType hook_type>
 static LRESULT WinHook::HookCallback(int code, LPARAM lparam, WPARAM wparam)
 {
+	if (code < 0) return CallNextHookEx(NULL, code, lparam, wparam);
+
 	const auto& callback = _callback_store[hook_type];
 
 	callback(code,lparam,wparam);

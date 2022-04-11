@@ -1,0 +1,19 @@
+Live credential harvesting
+ -> Via accessability get_CurrentHasKeyboardFocus along with check if IsPassword
+ -> maybe via chrome extension that harvests type=password elements
+ -> maybe via chrome extension that harvest network requests which contains login requests.
+ -> Dump TLS keys and record network traffic with libpcap
+ -> Smart keylogger with windows ui automation GetFocusedElement
+
+Record User activity
+ -> Utilize UI automation along with kb/mouse hooks
+    -> Create activity-threads: "WindowCreated('Control Panel') -> WindowCreated('Advanced System Settings') -> ..."
+
+Resources
+ -> Windows UI automation | MSAA
+
+Stored credential harvesting
+ -> Browser stored passwords
+ -> lsass dump(mimikatz?)
+ -> Discord token harvest
+ -> Scan for api keys (Google cloud, AWS, ...)

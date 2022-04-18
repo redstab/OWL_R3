@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{8540bc36-85f7-4c24-8f2e-f26d82019169}</ProjectGuid>
-    <RootNamespace>OWLR3</RootNamespace>
+    <ProjectGuid>{90640a7d-5af3-4029-90da-be443b844ef2}</ProjectGuid>
+    <RootNamespace>UIEventTest</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -140,14 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="KeyboardHook.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="WinHook.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="KeyboardHook.h" />
-    <ClInclude Include="magic_enum.hpp" />
-    <ClInclude Include="WinHook.h" />
+    <ClCompile Include="UI Event Test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

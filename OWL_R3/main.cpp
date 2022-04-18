@@ -1,10 +1,12 @@
 #include <iostream>
-
+#include <locale>
 #include "WinHook.h"
 #include "KeyboardHook.h"
 
+
 int main()
 {
+	std::locale::global(std::locale("se"));
 
 	KeyboardHook kb_hook;
 
